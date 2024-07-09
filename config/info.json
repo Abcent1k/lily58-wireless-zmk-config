@@ -70,5 +70,5 @@
         ]
       }
     },
-    "sensors": []
+    "sensors": ["LEFT_ENCODER", "RIGHT_ENCODER"]
   }
