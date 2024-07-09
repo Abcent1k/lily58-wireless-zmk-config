@@ -15,6 +15,15 @@
 	keymap {
         compatible = "zmk,keymap";
 
+        rgb_per_key {
+            label = "RGB per key lighting";
+            features = "UNDERGLOW|RGB";
+            pin = <&gpio0 3 GPIO_ACTIVE_HIGH>; // Пин, используемый для подключения светодиодов
+            pixel_count = <70>; // Количество светодиодов (равное количеству клавиш)
+            max_brightness = <60>; // Максимальная яркость
+            default_effect = "rainbow"; // Стандартный эффект
+        };
+
         default_layer {
 //   ------------------------------------------------------------------------------------------------------------
 //  0|  ESC  |  1  |  2  |  3   |  4   |  5   |                     |  6   |  7    |  8    |  9   |   0   |   =   | 11
